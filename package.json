@@ -1,0 +1,20 @@
+{
+  "name": "ebook",
+  "version": "1.0.0",
+  "description": "App to sell Ebook",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Philip Bedi",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "stripe": "^5.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}

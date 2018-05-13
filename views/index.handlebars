@@ -1,0 +1,24 @@
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Blueberry Development Ebook
+      </h1>
+      <p class="lead">learn Blueberry development in details</p>
+      <form action="/charge" method="POST">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{stripePublishableKey}}" data-amount="2500"
+          data-name="Bluberry Web Solutions Ltd" data-description="Not an actual book" data-image="/img/marketplace.png" data-locale="auto"
+          data-currency="gbp">
+          </script>
+        <script>
+          // Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase For £25</button>
+      </form>
+    </div>
+    <div class="col-md-6 ">
+      <img src="/img/blueberrybook.jpg" alt="Blueberry EBook" class="img-fluid">
+    </div>
+  </div>
+</section>
